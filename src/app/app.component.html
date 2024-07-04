@@ -1,0 +1,11 @@
+<div class="abc">
+  <input type="text" [(ngModel)]="value" placeholder="add a task"/>
+  <button class="abc" (click)="buttonClicked()">add Task</button>
+</div>
+<div class="'xyz">
+  <ul>
+    <li *ngfor="let item of todoList; let i=index">{{item}}  &nbsp; <button (click)="deleteItem(i)">delete</button>
+    </li> 
+  </ul>
+  {{todoList|json}}
+</div>
